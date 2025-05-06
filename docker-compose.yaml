@@ -13,3 +13,17 @@ services:
     volumes:
       - /storage_zfs/docker-volumes/ollama:/root/.ollama
     restart: always
+  flowise:
+      image: flowiseai/flowise
+      restart: always
+      ports:
+        - 3000:3000
+      healthcheck:
+          test: ['CMD', 'curl', '-f', 'http://localhost:3000/api/v1/ping']
+          interval: 10s
+          timeout: 5s
+          retries: 5
+          start_period: 30s
+      volumes:
+          - ~/.flowise:/root/.flowise
+      entrypoint: /bin/sh -c "sleep 3; flowise start"

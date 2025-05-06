@@ -5,9 +5,4 @@ Container-Kombination mit ollama und n8n um Agents zu evaluieren
 
 Testingenvoirement fuer KI-Agent-Workflows
 
-## ToDos
-
-- [ ] grundlegende docker-compose struktur aufbauen und testen
-- [ ] Requirements fuer dass Deployment auf blank initialisierten Maschinen festlegen
-
 

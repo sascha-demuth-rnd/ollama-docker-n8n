@@ -1,5 +1,5 @@
 # ollama-docker-n8n
-Container-combination with ollama and n8n to evaluate agents
+Container-Kombination mit ollama und n8n um Agents zu evaluieren
 
 ## Docker-Compose Konglumerat um die Verwendung von n8n mit ollama in einem Image zu testen
 
